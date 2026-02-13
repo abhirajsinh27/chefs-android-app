@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Recipe Header -->
+        <TextView
+            android:id="@+id/tvBiryaniHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chef's Special"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgBiryani"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/biryani"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Veg Biryani"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="  • 1 cup Basmati rice\n
+  • 1 cup mixed vegetables (carrot, beans, peas)\n
+  • 1 large onion, sliced\n
+  • 1 tomato, chopped\n
+  • 2 tablespoons oil or ghee\n
+  • 1 teaspoon ginger-garlic paste\n
+  • 1/2 teaspoon turmeric powder\n
+  • 1 teaspoon red chili powder\n
+  • 1 teaspoon garam masala\n
+  • 2-3 cloves\n
+  • 2-3 cardamom pods\n
+  • 1 small cinnamon stick\n
+  • Salt to taste\n
+  • Fresh coriander leaves for garnish"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="
+1. Rinse the rice and soak for 20–30 minutes.\n
+2. Heat oil or ghee in a pan and sauté whole spices (cloves, cardamom, cinnamon).\n
+3. Add sliced onions and cook until golden brown.\n
+4. Add ginger-garlic paste, chopped tomatoes, and cook until soft.\n
+5. Add mixed vegetables, turmeric, red chili powder, garam masala, and salt.\n
+6. Drain the rice and add to the pan, mix gently.\n
+7. Add 2 cups of water, cover, and cook on low heat until rice is fluffy.\n
+8. Garnish with fresh coriander leaves and serve hot."
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

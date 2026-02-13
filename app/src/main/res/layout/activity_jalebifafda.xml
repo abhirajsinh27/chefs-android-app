@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <!-- Recipe: Jalebi -->
+        <TextView
+            android:id="@+id/tvJalebi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chef's"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/imgJalebi"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jalebifafda"
+            android:clipToOutline="true" />
+
+        <TextView
+            android:id="@+id/tvJalebiTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Jalebi"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvJalebiIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients for Jalebi"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvJalebiIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="• 1 cup all-purpose flour\n• 2 tbsp cornflour\n• 1/2 tsp baking soda\n• 1/2 cup yogurt\n• 1 cup sugar\n• 1/2 cup water\n• A few saffron strands\n• 1/2 tsp cardamom powder\n• Ghee for frying"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvJalebiInstructionsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvJalebiInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="1. Prepare Batter:\n• Mix flour, cornflour, baking soda, and yogurt into a smooth batter.\n• Let it ferment for 6-8 hours.\n\n2. Make Sugar Syrup:\n• Boil sugar and water until it reaches one-string consistency.\n• Add saffron and cardamom powder.\n\n3. Fry Jalebis:\n• Heat ghee, pipe batter in spiral shapes.\n• Fry until golden and crisp.\n\n4. Soak and Serve:\n• Dip in warm sugar syrup for 1-2 minutes.\n• Serve warm."
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Recipe: Fafda -->
+        <TextView
+            android:id="@+id/tvFafdaTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Fafda"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFafdaIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients for Fafda"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFafdaIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="• 1 cup gram flour (besan)\n• 1/2 tsp ajwain (carom seeds)\n• 1/2 tsp turmeric powder\n• 1/2 tsp baking soda\n• Salt to taste\n• 1 tbsp hot oil\n• Water as needed\n• Oil for frying"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvFafdaInstructionsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFafdaInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="1. Prepare Dough:\n• Mix gram flour, ajwain, turmeric, baking soda, salt, and hot oil.\n• Add water gradually and knead into a firm dough.\n\n2. Shape Fafda:\n• Take a small portion of dough and roll it into a thin strip.\n• Use your palms to flatten it.\n\n3. Fry:\n• Heat oil in a pan.\n• Fry the shaped fafda until crispy and golden brown.\n\n4. Serve:\n• Serve hot with papaya chutney and fried green chilies."
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

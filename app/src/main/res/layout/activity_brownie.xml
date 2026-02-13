@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Recipe Header -->
+        <TextView
+            android:id="@+id/tvBrownieHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chef's Delight"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgBrownie"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/brownie"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chocolate Brownie"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="  • 1 cup all-purpose flour\n
+  • 1/2 cup cocoa powder\n
+  • 1 cup sugar\n
+  • 1/2 cup melted butter\n
+  • 2 eggs\n
+  • 1/2 teaspoon baking powder\n
+  • 1/4 teaspoon salt\n
+  • 1 teaspoon vanilla extract\n
+  • 1/2 cup chopped dark chocolate or choco chips"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="
+1. Preheat your oven to 180°C (350°F).\n
+2. Grease a square baking pan with butter or line with parchment paper.\n
+3. In a mixing bowl, whisk together melted butter and sugar until smooth.\n
+4. Add eggs one by one and mix well, then add vanilla extract.\n
+5. Sift in flour, cocoa powder, baking powder, and salt. Mix gently.\n
+6. Fold in the chopped chocolate or choco chips.\n
+7. Pour the batter into the prepared pan and spread evenly.\n
+8. Bake for 25–30 minutes or until a toothpick inserted comes out with moist crumbs.\n
+9. Cool completely before cutting into squares.\n
+10. Enjoy your rich, fudgy chocolate brownies!"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

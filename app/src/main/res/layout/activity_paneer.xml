@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <!-- Author -->
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chef’s Delight"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgRecipeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/paneer"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paneer Butter Masala"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 200g paneer (cottage cheese), cubed\n• 2 tbsp butter\n• 2 tbsp oil\n• 2 medium onions, finely chopped\n• 2 tomatoes, pureed\n• 1 tbsp ginger-garlic paste\n• 1/2 tsp turmeric powder\n• 1 tsp red chili powder\n• 1 tsp garam masala\n• 1/2 cup fresh cream\n• Salt to taste\n• Fresh coriander for garnish"
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preparation Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Heat oil and butter in a pan on medium flame.\n\n2. Add chopped onions and sauté until golden brown.\n\n3. Add ginger-garlic paste and cook for 1 minute.\n\n4. Add tomato puree, turmeric, red chili powder, and salt. Cook until the oil separates.\n\n5. Add paneer cubes and mix gently.\n\n6. Pour in cream and garam masala. Stir well and cook for 2–3 minutes.\n\n7. Garnish with fresh coriander and serve hot with naan or rice."
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

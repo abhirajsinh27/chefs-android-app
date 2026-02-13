@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDhokla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chef's"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgRecipeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dhokla"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Dhokla"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients for Dhokla"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="   • 1 cup gram flour (besan)\n
+  • 1/2 cup yogurt\n
+  • 1/2 teaspoon turmeric powder\n
+  • 1 teaspoon ginger-green chili paste\n
+  • 1 teaspoon fruit salt (eno)\n
+  • 1 tablespoon lemon juice\n
+  • 1 teaspoon sugar\n
+  • Salt to taste\n
+  • Water as needed"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="
+1. Prepare Batter:\n\n
+   • In a bowl, mix gram flour, yogurt, turmeric, ginger-chili paste, lemon juice, sugar, and salt.\n
+   • Add water as needed to form a smooth batter.\n\n\n
+2. Add Eno and Steam:\n\n
+   • Just before steaming, add fruit salt (eno) and mix gently.\n
+   • Pour batter into a greased steaming dish.\n
+   • Steam for 15-20 minutes until cooked.\n\n\n
+3. Prepare Tempering:\n\n
+   • Heat oil, add mustard seeds, green chilies, and curry leaves.\n
+   • Pour this tempering over the steamed dhokla.\n\n\n
+4. Serve:\n\n
+   • Cut into squares and serve with green chutney.\n\n"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

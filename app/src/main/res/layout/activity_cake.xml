@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chef's"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgRecipeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cakeback" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cake"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients for Cake"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="   • 2 cups all-purpose flour\n
+  • 1 cup sugar\n
+  • 1/2 cup butter\n
+  • 1 teaspoon baking powder\n
+  • 1/2 teaspoon baking soda\n
+  • 1 cup milk\n
+  • 2 eggs\n
+  • 1 teaspoon vanilla extract"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="
+1. Preheat Oven:\n\n
+   • Preheat oven to 350°F (175°C). Grease a cake pan.\n\n\n
+
+2. Prepare Batter:\n\n
+   • Cream butter and sugar until fluffy.\n
+   • Add eggs and vanilla extract, mix well.\n
+   • Sift flour, baking powder, and baking soda together.\n
+   • Gradually mix dry ingredients into wet ingredients, adding milk slowly.\n\n\n
+
+3. Bake:\n\n
+   • Pour batter into greased pan and bake for 30-35 minutes.\n
+   • Insert a toothpick in the center; if it comes out clean, the cake is ready.\n\n\n
+
+4. Serve:\n\n
+   • Let the cake cool before serving. Optionally, frost with icing or powdered sugar.\n\n"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvmanchurian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chef's"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgRecipeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/manchurian"
+            android:clipToOutline="true" />
+
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Manchurian"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients For the Manchurian Ball"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text=" •1 cup grated cabbage\n •½ cup grated carrot\n •¼ cup finely chopped capsicum (bell pepper)\n •¼ cup finely chopped spring onions (optional)\n •2 tbsp all-purpose flour (maida)\n •2 tbsp corn flour\n •1 tsp ginger-garlic paste\n •1 tsp soy sauce\n •½ tsp black pepper powder\n •Salt to taste\n •Oil for frying"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/manchuriancook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/manchuriancooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="\n1.Sauté Aromatics:\n\n   •Heat oil in a pan or wok on medium heat.\n   •Add chopped garlic and ginger, sauté for a few seconds until fragrant.\n   •Add chopped spring onions (white part) and capsicum. Stir-fry for a minute.\n\n\n2.Shape the Balls:\n\n   •Take small portions of the mixture and roll them into firm balls, about the size of a marble or golf ball.\n   •Make sure they are tightly packed to prevent breaking while frying.\n\n\n3.Fry the Balls:\n\n   •Heat oil in a deep frying pan over medium-high heat.\n   •Once the oil is hot, gently drop the balls into the oil.\n   •Fry in batches, turning occasionally, until golden brown and crispy.\n   •Remove from oil and drain on paper towels to remove excess oil.\n\n\n4.Serve:\n\n   •Enjoy as a crispy snack with chili sauce, ketchup, or schezwan dip.\n   •Can be used for Manchurian gravy or dry Manchurian."
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

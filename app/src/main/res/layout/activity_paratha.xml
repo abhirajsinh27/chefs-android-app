@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <!-- Author -->
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chef’s Delight"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgRecipeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/paratha"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stuffed Paratha"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 2 cups whole wheat flour\n• 1 cup boiled and mashed potatoes (for stuffing)\n• 1 small onion, finely chopped\n• 1–2 green chilies, chopped\n• 1/2 tsp cumin seeds\n• 1/2 tsp garam masala\n• 1/2 tsp red chili powder\n• Salt to taste\n• 1 tbsp chopped coriander leaves\n• Ghee or oil for cooking"
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preparation Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. In a bowl, mix mashed potatoes, onion, green chilies, cumin seeds, red chili powder, garam masala, coriander leaves, and salt. This is your stuffing.\n\n2. In another bowl, knead the whole wheat flour with water to make a soft dough.\n\n3. Divide the dough into small balls and roll out each ball slightly.\n\n4. Place a spoonful of stuffing in the center, fold, and roll again gently into a paratha shape.\n\n5. Heat a tawa (griddle) and cook each paratha on both sides using ghee or oil until golden brown.\n\n6. Serve hot with butter, curd, or pickle."
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

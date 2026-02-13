@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <!-- Chef's Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chef's"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Burger Image -->
+        <ImageView
+            android:id="@+id/imgBurger"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/burger"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veg Burger"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  • 2 burger buns\n
+ • 1 boiled potato (mashed)\n
+ • 1/4 cup grated carrot\n
+ • 1/4 cup chopped cabbage\n
+ • 2 tbsp bread crumbs\n
+ • 1/2 tsp black pepper\n
+ • Salt to taste\n
+ • 1 tbsp mayonnaise\n
+ • 1 tbsp ketchup\n
+ • Butter for toasting"
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Instructions Header -->
+        <TextView
+            android:id="@+id/tvInstructionsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+1. Prepare Patty:\n\n
+   • In a bowl, mix mashed potato, grated carrot, cabbage, salt, pepper, and bread crumbs.\n
+   • Shape mixture into patties.\n
+   • Shallow fry on medium flame until golden brown.\n\n\n
+
+2. Toast Buns:\n\n
+   • Heat butter on a tawa and lightly toast both sides of the burger buns.\n\n\n
+
+3. Assemble:\n\n
+   • Spread mayonnaise and ketchup on buns.\n
+   • Place lettuce, veggie patty, cheese slice, and tomato slices.\n
+   • Cover with the top bun and press gently.\n\n\n
+
+4. Serve:\n\n
+   • Serve the burger hot with fries or cold drink."
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

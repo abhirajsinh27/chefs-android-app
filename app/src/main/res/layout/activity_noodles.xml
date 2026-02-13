@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <!-- Author -->
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chef’s Delight"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgRecipeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/noodles"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veg Noodles"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 2 cups boiled noodles\n• 1/2 cup chopped cabbage\n• 1/2 cup sliced capsicum\n• 1/2 cup grated carrot\n• 1/4 cup chopped spring onions\n• 2 tbsp soy sauce\n• 1 tbsp vinegar\n• 1 tbsp tomato ketchup\n• 1 tbsp oil\n• Salt and pepper to taste"
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preparation Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Heat oil in a large pan or wok on medium flame.\n\n2. Add chopped vegetables and sauté for 2–3 minutes until slightly tender.\n\n3. Add soy sauce, vinegar, and tomato ketchup. Mix well.\n\n4. Add boiled noodles and toss everything together.\n\n5. Season with salt and pepper. Mix well and cook for another minute.\n\n6. Garnish with spring onions and serve hot."
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

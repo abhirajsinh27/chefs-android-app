@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSamosa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chef's"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgRecipeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/samosa"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Samosa"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients for Samosa"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="   • 2 cups all-purpose flour (maida)\n
+  • 3 boiled potatoes, mashed\n
+  • 1/2 cup green peas\n
+  • 1 teaspoon cumin seeds\n
+  • 1 teaspoon garam masala\n
+  • 1 teaspoon coriander powder\n
+  • 1/2 teaspoon turmeric powder\n
+  • 1 teaspoon red chili powder\n
+  • 1 tablespoon oil\n
+  • Salt to taste\n
+  • Oil for deep frying"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="
+1. Prepare Dough:\n\n
+   • Mix flour, salt, and oil. Add water gradually to form a firm dough.\n
+   • Cover and let it rest for 30 minutes.\n\n\n
+2. Prepare Filling:\n\n
+   • Heat oil in a pan, add cumin seeds.\n
+   • Add green peas, mashed potatoes, and spices. Mix well.\n
+   • Let the mixture cool.\n\n\n
+3. Shape Samosas:\n\n
+   • Roll out small dough circles, cut in half.\n
+   • Fold into a cone, fill with stuffing, and seal edges.\n\n\n
+4. Fry Samosas:\n\n
+   • Heat oil in a deep pan and fry samosas on low-medium heat until golden brown.\n\n\n
+5. Serve:\n\n
+   • Serve hot with tamarind chutney and green chutney.\n\n"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

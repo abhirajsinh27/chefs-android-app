@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chef\'s</string>
+    <string name="todo">કરવાનું</string>
+    <string name="recipes">રીસિપિ</string>
+    <string name="skip">સ્કિપ</string>
+    <string name="chef_s_table">શેફની ટેબલ</string>
+    <string name="welcome_back">ફરી સ્વાગત છે</string>
+    <string name="email">ઈમેલ</string>
+    <string name="password">પાસવર્ડ</string>
+    <string name="forgot_password">પાસવર્ડ ભૂલી ગયા?</string>
+    <string name="log_in">લોગ ઇન</string>
+    <string name="don_t_have_an_account_sign_up">એકાઉન્ટ નથી? સાઇન અપ કરો</string>
+    <string name="change_language">ભાષા બદલો</string>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvChef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chef’s"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgCholeBhature"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cholebhature"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chole Bhature"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients for Chole"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="  • 1 cup chickpeas (chole)\n
+ • 1 large onion (finely chopped)\n
+ • 2 tomatoes (pureed)\n
+ • 1 tsp ginger-garlic paste\n
+ • 2 tsp chole masala\n
+ • 1 tsp cumin seeds\n
+ • 1/2 tsp turmeric powder\n
+ • 1 tsp red chili powder\n
+ • 1/2 tsp garam masala\n
+ • 2 tbsp oil\n
+ • Salt to taste\n
+ • Fresh coriander for garnish"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Bhature Ingredients Header -->
+        <TextView
+            android:id="@+id/tvBhatureIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients for Bhature"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvBhatureIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="  • 2 cups all-purpose flour (maida)\n
+ • 1/4 cup semolina (sooji)\n
+ • 1/2 cup curd (yogurt)\n
+ • 1 tsp sugar\n
+ • 1/2 tsp salt\n
+ • 1/2 tsp baking soda\n
+ • Oil for deep frying"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+1. Prepare Chole:\n\n
+   • Soak chickpeas overnight and pressure cook until soft.\n
+   • Heat oil, add cumin seeds, and sauté onions until golden.\n
+   • Add ginger-garlic paste, tomato puree, and spices.\n
+   • Add boiled chickpeas and simmer for 10-15 minutes.\n
+   • Garnish with coriander.\n\n\n
+
+2. Prepare Bhature:\n\n
+   • Mix flour, semolina, sugar, salt, and baking soda.\n
+   • Add curd and knead into a soft dough using little water.\n
+   • Rest for 2 hours, then divide into balls.\n
+   • Roll into discs and deep fry until puffed and golden.\n\n\n
+
+3. Serve:\n\n
+   • Serve hot Chole with crispy Bhature, sliced onions, and lemon wedges."
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

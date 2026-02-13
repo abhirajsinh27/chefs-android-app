@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvIdli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chef's"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgRecipeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/idli"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Idli and Sambar"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients for Idli"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="   • 2 cups rice\n
+  • 1 cup urad dal (black gram lentils)\n
+  • 1/2 teaspoon fenugreek seeds\n
+  • Salt to taste\n
+  • Water as needed"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvSambarIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients for Sambar"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvSambarIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="   • 1/2 cup toor dal (pigeon peas)\n
+  • 1 small onion, chopped\n
+  • 1 tomato, chopped\n
+  • 1/2 cup mixed vegetables (carrot, beans, brinjal)\n
+  • 1 tablespoon sambar powder\n
+  • 1/2 teaspoon turmeric powder\n
+  • 1 teaspoon mustard seeds\n
+  • A pinch of asafoetida\n
+  • 2 dried red chilies\n
+  • Curry leaves\n
+  • Tamarind extract\n
+  • Salt to taste"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="
+1. Prepare Idli Batter:\n\n
+   • Soak rice, urad dal, and fenugreek seeds in water for 6 hours.\n
+   • Grind to a smooth batter, add salt, and ferment overnight.\n\n\n
+
+2. Steam Idli:\n\n
+   • Pour batter into greased idli molds.\n
+   • Steam for 10-12 minutes until cooked.\n\n\n
+
+3. Prepare Sambar:\n\n
+   • Pressure cook toor dal with turmeric until soft.\n
+   • Sauté mustard seeds, red chilies, and curry leaves in oil.\n
+   • Add onions, tomatoes, vegetables, and sambar powder.\n
+   • Pour cooked dal and tamarind extract, simmer until thick.\n\n\n
+
+4. Serve:\n\n
+   • Serve soft idlis with hot sambar and coconut chutney.\n\n"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

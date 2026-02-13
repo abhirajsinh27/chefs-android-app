@@ -1,0 +1,1891 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <!-- Sticky Recipes Title -->
+        <ImageView
+            android:id="@+id/imgTitle"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/top"
+            android:scaleType="centerCrop"
+            android:background="@drawable/top"
+            android:elevation="8dp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backrv"
+            android:paddingLeft="13dp"
+            android:paddingTop="29dp"
+            android:paddingRight="13dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+
+                <!-- Search Bar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:radius="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Find recipes"
+                        android:padding="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#A9A9A9"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Horizontal ScrollView -->
+                <HorizontalScrollView
+                    android:id="@+id/autoImageScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <!-- Inner LinearLayout with horizontal orientation -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- Example Items inside Horizontal Scroll -->
+                        <ImageView
+                        android:id="@+id/Idli"
+                        android:layout_width="380dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/idli"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"/>
+
+                        <ImageView
+                            android:id="@+id/jalebi"
+                            android:layout_width="380dp"
+                            android:layout_height="250dp"
+                            android:src="@drawable/jalebifafda"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/rounded_background"
+                            android:clipToOutline="true"/>
+
+                        <ImageView
+                            android:id="@+id/ikachori"
+                            android:layout_width="380dp"
+                            android:layout_height="250dp"
+                            android:src="@drawable/kachori"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/rounded_background"
+                            android:clipToOutline="true"/>
+
+                        <ImageView
+                            android:id="@+id/imgMango"
+                            android:layout_width="380dp"
+                            android:layout_height="250dp"
+                            android:src="@drawable/mengo"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/rounded_background"
+                            android:clipToOutline="true"/>
+
+                        <ImageView
+                            android:id="@+id/Manchurian"
+                            android:layout_width="380dp"
+                            android:layout_height="250dp"
+                            android:src="@drawable/manchurian"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/rounded_background"
+                            android:clipToOutline="true"/>
+
+                        <!-- Add more items as required -->
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <!-- Trending Recipes Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Trending Recipes"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Recipe Card 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <!-- Recipe Image -->
+                    <ImageView
+                        android:id="@+id/imgmanchurian"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/manchurian" />
+
+                    <!-- Recipe Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manchurian"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Recipe Author -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Sam the Cooking Guy"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- Recipe Time and Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="40min • 4.5 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- View Recipe Button -->
+                    <Button
+                        android:id="@+id/btnmanchurian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <!-- Recipe Image -->
+                    <ImageView
+                        android:id="@+id/imgvegsoup"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/vegsoup" />
+
+                    <!-- Recipe Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Veg Soup"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Recipe Author -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Tasty"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- Recipe Time and Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="01hr • 4.5 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- View Recipe Button -->
+                    <Button
+                        android:id="@+id/btnvegsoup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <!-- Recipe Image -->
+                    <ImageView
+                        android:id="@+id/imgdosa"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dosa" />
+
+                    <!-- Recipe Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dosa"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Recipe Author -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Jamie"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- Recipe Time and Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="30min • 4.0 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- View Recipe Button -->
+                    <Button
+                        android:id="@+id/btndosa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <!-- Recipe Image -->
+                    <ImageView
+                        android:id="@+id/imgpoha"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/poha" />
+
+                    <!-- Recipe Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poha"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Recipe Author -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by cook"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- Recipe Time and Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="45min • 3.5 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- View Recipe Button -->
+                    <Button
+                        android:id="@+id/btnpoha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 5 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <!-- Recipe Image -->
+                    <ImageView
+                        android:id="@+id/imgkachori"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kachori" />
+
+                    <!-- Recipe Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kachori"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Recipe Author -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by cooking chef"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- Recipe Time and Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="55min • 4.5 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- View Recipe Button -->
+                    <Button
+                        android:id="@+id/btnkachori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 6 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <!-- Recipe Image -->
+                    <ImageView
+                        android:id="@+id/imgidli"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/idli" />
+
+                    <!-- Recipe Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Idli Sambar"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Recipe Author -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Tasty"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- Recipe Time and Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="01hr • 4.5 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- View Recipe Button -->
+                    <Button
+                        android:id="@+id/btnidli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 7 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <!-- Recipe Image -->
+                    <ImageView
+                        android:id="@+id/imgcakes"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cakes" />
+
+                    <!-- Recipe Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cake"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Recipe Author -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by jamie"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- Recipe Time and Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="47min • 4.0 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- View Recipe Button -->
+                    <Button
+                        android:id="@+id/btncake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 8 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <!-- Recipe Image -->
+                    <ImageView
+                        android:id="@+id/imgsamosa"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/samosa" />
+
+                    <!-- Recipe Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Samosa"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Recipe Author -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by cook"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- Recipe Time and Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="55min • 3.5 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- View Recipe Button -->
+                    <Button
+                        android:id="@+id/btnsamosa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 9 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <!-- Recipe Image -->
+                    <ImageView
+                        android:id="@+id/imgdhokla"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dhokla" />
+
+                    <!-- Recipe Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dhokla"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Recipe Author -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by cooking chef"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- Recipe Time and Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="01hr • 4.7 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- View Recipe Button -->
+                    <Button
+                        android:id="@+id/btndhokla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 10 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <!-- Recipe Image -->
+                    <ImageView
+                        android:id="@+id/imgstrawberry"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/strawberry" />
+
+                    <!-- Recipe Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Strawberry Shake"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Recipe Author -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Tasty"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- Recipe Time and Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="30min • 3.9 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <!-- View Recipe Button -->
+                    <Button
+                        android:id="@+id/btnstrawberry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!-- Recipe Card 11 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgpasta"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pasta" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pasta"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Mario"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="25min • 4.2 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnpasta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 12 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgpizza"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pizza" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pizza"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Antonio"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="40min • 4.5 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnpizza"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 13 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgpaneer"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/paneer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paneer Masala"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Priya"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="35min • 4.0 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnpaneer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 14 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgfriedrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/friedrice" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fried Rice"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Arjun"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="20min • 4.3 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnfriedrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!-- Recipe Card 15 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgburger"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/burger" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Burger"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Rahul"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="15min • 4.1 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnburger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 16 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgnoodles"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/noodles" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Noodles"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Anjali"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="20min • 4.0 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnnoodles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 17 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgparatha"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/paratha" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aloo Paratha"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Meera"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="25min • 4.4 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnparatha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 18 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgsandwich"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sandwich" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sandwich"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Kavya"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="15min • 4.2 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnsandwich"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 19 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgcutlet"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cutlet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cutlet"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Rohan"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="30min • 4.3 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btncutlet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 20 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgbiryani"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/biryani" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Veg Biryani"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Suman"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="45min • 4.6 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnbiryani"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!-- Recipe Card 21 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgpaneertikka"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/paneertikka" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paneer Tikka"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Neha"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="35min • 4.5 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnpaneertikka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 22 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgspringroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/springroll" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spring Roll"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Akash"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="20min • 4.2 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnspringroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 23 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgsheera"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sheera" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sheera"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Priya"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="25min • 4.3 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnsheera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 24 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgcholebhature"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cholebhature" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chole Bhature"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Vikram"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="35min • 4.4 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btncholebhature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 25 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgpavbhaji"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pavbhaji" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pav Bhaji"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Ankit"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="40min • 4.5 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnpavbhaji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 26 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imglassi"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lassi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lassi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Ritu"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="10min • 4.3 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnlassi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 27 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imglemonade"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lemonade" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lemonade"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Tanvi"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="5min • 4.1 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnlemonade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 28 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgbrownie"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/brownie" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brownie"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Varun"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="30min • 4.6 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnbrownie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 29 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgicecream"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icecream" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ice Cream"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Sneha"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="15min • 4.4 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnicecream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Recipe Card 30 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:radius="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgchowmein"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:radius="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chowmein" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chow Mein"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="by Chef Raghav"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="20min • 4.3 rating"
+                        android:textColor="#A9A9A9"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnchowmein"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#734C3F"
+                        android:text="View Recipe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>

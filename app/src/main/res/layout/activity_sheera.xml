@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <!-- Author -->
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chef’s Delight"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgRecipeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sheera"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rava Sheera (Sooji Halwa)"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 1 cup semolina (rava/sooji)\n• ¾ cup sugar\n• 2 tbsp ghee (clarified butter)\n• 2 cups water\n• ¼ tsp cardamom powder\n• 8–10 cashews\n• 8–10 raisins\n• A few saffron strands (optional)"
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preparation Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Heat ghee in a pan and roast cashews and raisins until golden. Remove and keep aside.\n\n2. In the same ghee, add semolina and roast on low flame until aromatic and light golden.\n\n3. In a separate pot, boil water and sugar together. Add cardamom powder and saffron.\n\n4. Slowly pour the hot sugar-water mixture into the roasted rava while stirring continuously to avoid lumps.\n\n5. Cook until the mixture thickens and ghee starts to separate.\n\n6. Add roasted nuts and mix well.\n\n7. Serve warm, garnished with a few extra nuts on top."
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

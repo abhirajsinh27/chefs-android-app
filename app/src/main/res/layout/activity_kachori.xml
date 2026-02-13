@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvKachori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Chef's"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Recipe Image -->
+        <ImageView
+            android:id="@+id/imgRecipeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kachori"
+            android:clipToOutline="true" />
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Kachori"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredients Header -->
+        <TextView
+            android:id="@+id/tvIngredientsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ingredients for Kachori"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredient List -->
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="  • 2 cups all-purpose flour (maida)\n
+ • 1/2 cup split moong dal (yellow lentils)\n
+ • 1 teaspoon fennel seeds\n
+ • 1/2 teaspoon cumin seeds\n
+ • 1 teaspoon red chili powder\n
+ • 1/2 teaspoon garam masala\n
+ • 1/2 teaspoon amchur (dry mango powder)\n
+ • 2 tablespoons oil\n
+ • Salt to taste\n
+ • Oil for deep frying"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <!-- Cooking Instructions Header -->
+        <TextView
+            android:id="@+id/tvCookingHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cooking Instructions"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Cooking Instructions -->
+        <TextView
+            android:id="@+id/tvCookingInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="\n1. Prepare Dough:\n\n
+   • Mix flour, salt, and oil. Add water gradually to form a firm dough.\n
+   • Cover and let it rest for 30 minutes.\n\n
+2. Prepare Filling:\n\n
+   • Soak moong dal for 2 hours, then drain.\n
+   • Sauté fennel, cumin seeds, and spices in oil. Add dal and cook for a few minutes.\n
+   • Let the mixture cool.\n\n
+3. Shape Kachoris:\n\n
+   • Divide dough into small balls, roll them out, and add filling.\n
+   • Seal the edges and flatten slightly.\n\n
+4. Fry Kachoris:\n\n
+   • Heat oil in a deep pan and fry kachoris on low-medium heat until golden brown.\n\n
+5. Serve:\n\n
+   • Serve hot with tamarind chutney and green chutney."
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
