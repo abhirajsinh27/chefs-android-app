@@ -13,7 +13,7 @@ An Android recipe application built using Java and XML in Android Studio.
 - Java
 - XML
 - Android Studio
-- SQLite (if used)
+- SQLite for authentication
 
 ## 📂 Project Structure
 - app/
